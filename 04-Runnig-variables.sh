@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PERSON1=Dakshina #No space before and after =
-PERSON2=Ramesh
+PERSON1=$1 #No space before and after =
+PERSON2=$2
 
 echo "$PERSON1:: Hi, $PERSON2"
 echo "$PERSON2:: Hell, $PERSON1"
