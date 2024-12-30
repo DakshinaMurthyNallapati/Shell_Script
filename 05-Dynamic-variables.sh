@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin,/bash
 
 echo "Please enter your name :" # Text entered here will be added as value to the variable
 
