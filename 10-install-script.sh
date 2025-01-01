@@ -12,10 +12,10 @@ USERID=$(id -u)
 
     if [ $? -ne 0 ]
     then
-            echo "Installing mysql.. FAILURE"
+            echo "Installation of mysql.. FAILURE"
             exit 1
     else
-            echo "Installing mysql..SUCCESS"
+            echo "Installation of mysql..SUCCESS"
 
     fi
 
@@ -23,9 +23,9 @@ USERID=$(id -u)
 
     if [ $? -ne 0 ]
     then
-            echo "Installing git.. FAILURE"
+            echo "Installation of git.. FAILURE"
         exit 1
     else
-        echo "Installing git..SUCCESS"
+        echo "Installation of git..SUCCESS"
 
     fi
