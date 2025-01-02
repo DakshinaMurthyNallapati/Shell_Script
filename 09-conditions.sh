@@ -8,8 +8,6 @@ if [ $NUMBER -gt 100 ]
     then
         echo "Given number is greather than 100"
         exit 1
-
-
 fi
 
 if [ $NUMBER -eq 100 ]
