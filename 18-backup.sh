@@ -41,7 +41,7 @@ mkdir -p /home/ec2-user/shellscript-logs/
 
     if [ ! -d $DEST_DIR ] && [ ! -d $SOURCE_DIR ]
         then
-            echo -e "$SOURCE_DIR $DEST_DIR $R Both directories provided does not exists..$N Please check"
+            echo -e "$SOURCE_DIR $DEST_DIR $R Both directories does not exists..$N Please check"
             exit 1
 
     fi
