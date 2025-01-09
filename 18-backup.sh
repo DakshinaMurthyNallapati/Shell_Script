@@ -39,6 +39,13 @@ mkdir -p /home/ec2-user/shellscript-logs/
             USAGE
     fi
 
+    if [ ! -d $SOURCE_DIR ]
+        then
+            echo -e "$SOURCE_DIR Does not exists.. Please check"
+            exit 1
+
+    fi
+
 
 echo "Script started executing at : $TIMESTAMP" &>>$LOG_FILE_NAME
 
