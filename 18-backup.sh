@@ -39,6 +39,14 @@ mkdir -p /home/ec2-user/shellscript-logs/
             USAGE
     fi
 
+    if [ ! -d $DEST_DIR ] && [ ! -d $SOURCE_DIR ]
+        then
+            echo -e "$SOURCE_DIR $DEST_DIR $R Paths provided does not exists..$N Please check"
+            exit 1
+
+    fi
+
+
     if [ ! -d $SOURCE_DIR ]
         then
             echo -e "$SOURCE_DIR $R Source directory does not exists..$N Please check"
@@ -53,13 +61,7 @@ mkdir -p /home/ec2-user/shellscript-logs/
 
     fi
 
-    if [ ! -d $DEST_DIR ] && [ ! -d $SOURCE_DIR ]
-        then
-            echo -e "$SOURCE_DIR $DEST_DIR $R Paths provided does not exists..$N Please check"
-            exit 1
-
-    fi
-
+    
 echo "Script started executing at : $TIMESTAMP" &>>$LOG_FILE_NAME
 
    
