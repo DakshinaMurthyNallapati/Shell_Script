@@ -39,9 +39,9 @@ mkdir -p /home/ec2-user/shellscript-logs/
             USAGE
     fi
 
-    if [ ! -d $SOURCE_DIR ]
+    if [ ! -d $SOURCE_DIR $ DEST_DIR ]
         then
-            echo -e "$SOURCE_DIR Does not exists.. Please check"
+            echo -e "$SOURCE_DIR $R Does not exists..$N Please check"
             exit 1
 
     fi
