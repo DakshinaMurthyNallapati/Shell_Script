@@ -12,8 +12,8 @@ while read -r line
 
         if [ $USAGE -ge $DISK_THRESHOLD ]
             then
-                MSG+="High disk usage on partition : $PARTITION Usage is : $USAGE"
+                MSG+="High disk usage on partition : $PARTITION Usage is : $USAGE /n"
         fi
 
     done <<< $DISK_USAGE
-    echo "Message : $MSG"
+    echo -e "Message : $MSG"
