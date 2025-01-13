@@ -10,7 +10,7 @@ while read -r line
         PARTITION=$(echo $line | awk -F " " '{print $NF}')
         #echo "Partition: $PARTITION    Usage: $USAGE"
 
-        if [ $USAGE -g $DISK_THRESHOLD ]
+        if [ $USAGE -ge $DISK_THRESHOLD ]
             then
                 MSG+="High disk usage partition is: $PARTITION Usage percentage is: $USAGE\n"
         fi
