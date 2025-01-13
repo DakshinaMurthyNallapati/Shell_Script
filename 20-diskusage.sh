@@ -12,7 +12,7 @@ while read -r line
 
         if [ $USAGE -ge $DISK_THRESHOLD ]
             then
-                MSG+="High disk usage partition is: $PARTITION Usage is : $USAGE\n"
+                MSG+="High disk usage partition is: $PARTITION Usage percentage is: $USAGE\n"
         fi
 
     done <<< $DISK_USAGE
