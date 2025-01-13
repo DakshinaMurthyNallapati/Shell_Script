@@ -16,4 +16,4 @@ while read -r line
         fi
 
     done <<< $DISK_USAGE
-    echo -e "Message : $MSG+"
+    echo -e "Message : $MSG"
